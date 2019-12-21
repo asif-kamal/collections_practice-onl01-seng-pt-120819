@@ -48,5 +48,6 @@ def find_a(array)
     new_arr = []
     new_arr << i
     new_arr
+  end 
 end
     
