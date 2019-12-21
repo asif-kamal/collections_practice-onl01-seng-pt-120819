@@ -45,7 +45,7 @@ end
 
 def find_a(array)
   new_arr = []
-  if array.detect {|i| i.start_with?("a")}
+  if array.detect{|i| i.start_with?("a")}
     new_arr << i 
   end 
 end
