@@ -52,9 +52,11 @@ def sum_array(array)
 end
 
 def add_s(array)
-  if !array[1]
   array.each_with_index.collect{
-    |element, index| element + "s" 
+    |element, index| if index != 1 
+    element + "s"
+    else index == 1
+    array.collect{|element|}
   }
 end
 end 
